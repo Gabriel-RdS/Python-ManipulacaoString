@@ -43,3 +43,13 @@ class ExtratorArgumentoURL:
         valor = self.url[inicioSubstringValor]
         return valor
 
+    def __str__(self, representacaoString=None):
+        moedaOrigem, moedaDestino = self.retornaMoedas()
+        representacaoString = f'Valor: {self.retornaValor()} {moedaOrigem} {moedaDestino}'
+        return representacaoString
+
+    def __len__(self):
+        return len(self.url)
+
+    def __eq__(self, other):
+        return self.url == other.url

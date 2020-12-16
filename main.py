@@ -13,3 +13,6 @@ moedaOrigem, moedaDestino = cambio.retornaMoedas()
 
 valor = cambio.retornaValor()
 print(moedaOrigem, moedaDestino, valor)
+
+print(cambio)
+print(len(cambio))

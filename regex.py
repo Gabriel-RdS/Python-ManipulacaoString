@@ -13,4 +13,3 @@ retorno = re.search(padrao, texto)
 retorno2 = re.search(padrao, texto2)
 print(retorno.group())
 print(retorno2.group())
-
